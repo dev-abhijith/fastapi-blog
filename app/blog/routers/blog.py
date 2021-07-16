@@ -1,9 +1,9 @@
 
 from fastapi import APIRouter, Depends
 from sqlalchemy.orm.session import Session
-from .. import schema, database, oauth2
+from blog import schema, database, oauth2
 from typing import List
-from ..repositories import blog
+from blog.repositories import blog
 
 
 router = APIRouter(
